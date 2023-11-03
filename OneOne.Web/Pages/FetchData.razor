@@ -1,0 +1,8 @@
+﻿@page "/fetchdata"
+<EditForm Model="@newStudent" OnValidSubmit="@SubmitForm">
+    <div class="row">
+        <div class="col-md-3">
+            <input type="text" @bind-value="newStudent.Address.Street" />
+        </div>
+    </div>
+</EditForm>
